@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.freakingnoli.sqlapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+    <EditText
+        android:id="@+id/mission_name"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:hint="Hello World!" />
+    <EditText
+        android:id="@+id/mission_info"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textSize="25dp"
+        android:maxLines="2"
+        android:hint="mission"
+        />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="save" />
+        <Button
+            android:id="@+id/recover_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="recover"
+            />
+    </RelativeLayout>
+</LinearLayout>
