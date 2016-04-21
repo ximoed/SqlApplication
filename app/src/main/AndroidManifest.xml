@@ -15,6 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".OtherActivity" />
+        <activity android:name=".NoticeActivity"
+            android:parentActivityName="com.example.freakingnoli.sqlapplication.MainActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.freakingnoli.sqlapplication.MainActivity"
+            />
+        </activity>
     </application>
 
 </manifest>
